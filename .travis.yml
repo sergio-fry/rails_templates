@@ -3,8 +3,10 @@ language: ruby
 cache: bundler
 rvm:
   - 2.6.6
-before_install: gem install rails
+before_install:
+  - gem install rails
+  - mkdir -p sandbox
 
 script:
-  - rails new my_app
+  - rails new sandbox/my_app --minimal -m 
 
