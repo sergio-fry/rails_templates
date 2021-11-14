@@ -7,5 +7,5 @@ before_install:
   - mkdir -p sandbox
 
 script:
-  - bundle exec rails new sandbox/rspec_app --minimal -m rspec.rb
+  - rails new sandbox/rspec_app --minimal -m rspec.rb
 
