@@ -4,9 +4,9 @@ cache: bundler
 rvm:
   - 2.6.6
 before_install:
-  - bundle install
+  - gem install rails -v '6.1.4.1'
   - mkdir -p sandbox
 
 script:
-  - bundle exec rails new sandbox/my_app --minimal -m rspec.rb
+  - bundle exec rails new sandbox/rspec_app --minimal -m rspec.rb
 

@@ -1,4 +1,4 @@
-run "spring stop"
+run "spring stop || echo 'spring is off'"
 
 gem_group :development, :test do
   gem "rspec-rails"
